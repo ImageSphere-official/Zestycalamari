@@ -30,11 +30,11 @@ import ru.nsu.ccfit.zuev.osu.online.PostBuilder.RequestException;
 import ru.nsu.ccfit.zuev.osu.scoring.BeatmapLeaderboardScoringMode;
 
 public class OnlineManager {
-    public static final String hostname = "192.168.1.3:8080";
+    public static final String hostname = "127.0.0.1:5993";
     public static final String endpoint = "http://" + hostname + "/api/";
     public static final String updateEndpoint = endpoint + "update.php?lang=";
-    public static final String defaultAvatarURL = "http://" + hostname + "/user/avatar/0.png";
-    private static final String onlineVersion = "8";
+    public static final String defaultAvatarURL = "http://" +hostname + "/user/avatar/0.png";
+    private static final String onlineVersion = "9";
 
     public static final OkHttpClient client = new OkHttpClient();
 
